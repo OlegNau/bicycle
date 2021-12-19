@@ -1,0 +1,95 @@
+.page-footer {
+  padding: 30px 0 98px;
+  @media (max-width: $desktop-width) {
+   padding-bottom: 58px;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding: 30px 16px 30px;
+   }
+}
+
+.page-footer__adress {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 31px;
+  text-align: center;
+  color: $black;
+  opacity: 0.7;
+  width: 555px;
+  margin: 20px auto 56px;
+
+  @media (max-width: $desktop-width) {
+    width: 629px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+}
+
+.page-footer__map {
+  display: block;
+  width: 957px;
+  margin: 0 auto;
+
+  @media (max-width: $desktop-width) {
+   width: 698px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+  }
+}
+
+.page-footer__contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 41px auto 0;
+  grid-template-columns: 1fr 1fr;
+  width: 700px;
+  padding: 0;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    width: auto;
+    margin-top: 30px;
+  }
+}
+
+.page-footer__contacts-element {
+  padding-left: 75px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    margin: 0 auto 20px;
+  }
+}
+
+.page-footer__mail, .page-footer__phone {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $black;
+  opacity: 50%;
+  margin-left: 15px;
+}
+
+.page-footer__contacts-element:hover .page-footer__mail, .page-footer__phone {
+ color: turquoise;
+ opacity: 1;
+}
+
+.page-footer__mail-icon, .page-footer__phone-icon {
+  display: inline-block;
+  vertical-align: baseline;
+}

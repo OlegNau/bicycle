@@ -1,0 +1,127 @@
+.navigation {
+  grid-area: nav;
+  z-index: 2;
+  @media (max-width: $desktop-width) {
+  z-index: 4;
+  }
+}
+
+.navigation__list {
+  width: 874px;
+  list-style: none;
+  padding: 20px 20px 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $extra-light-white;
+
+  @media (max-width: $desktop-width) {
+    background-color: $white;
+    width: 320px;
+    border: none;
+    flex-direction: column;
+    padding: 100px 0;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 4;
+  }
+  
+  @media (max-width: $tablet-width) {
+  }
+}
+
+.navigation__link {
+  display: inline-block;
+  color: $light-white;
+  padding: 0;
+  margin-bottom: 10px;
+  letter-spacing: -0.005em;
+
+
+  @media (max-width: $desktop-width) {
+    color: $black;
+    width: 320px;
+    padding: 17px 35px 17px 16px;
+    background-color: $gray;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+    color: $dark-gray;
+    position: relative;
+      &::before {
+        content: "";
+        display: block;
+        z-index: 5;
+        background-image: url("../img/svg/navigation-arrow.svg");
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 16px;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+  }
+  
+  @media (max-width: $tablet-width) {
+  }
+}
+
+.navigation__link:hover {
+  color: $white;
+}
+
+.navigation__item{
+  margin-right: 135px;
+
+  @media (max-width: $desktop-width) {
+  margin-right: 0;
+  }
+}
+
+.navigation__item:nth-child(4n+4) {
+  margin-right: 0px;
+}
+
+.navigation__toggle {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+  display: block;
+  z-index: 5;
+  background-image: url("../img/svg/open-menu.svg");
+  width: 50px;
+  height: 50px;
+  background-color: $turquoise;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+}
+
+.navigation__toggle--close {
+  z-index: 5;
+  background-image: url("../img/svg/close-menu.svg");
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+}
+
+.navigation--hide {
+  @media (max-width: $desktop-width) {
+  display: none;
+  }
+}
