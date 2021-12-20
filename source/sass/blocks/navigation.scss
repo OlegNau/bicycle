@@ -1,6 +1,7 @@
 .navigation {
   grid-area: nav;
   z-index: 2;
+
   @media (max-width: $desktop-width) {
   z-index: 4;
   }
@@ -27,9 +28,6 @@
     top: 0;
     z-index: 4;
   }
-  
-  @media (max-width: $tablet-width) {
-  }
 }
 
 .navigation__link {
@@ -38,7 +36,6 @@
   padding: 0;
   margin-bottom: 10px;
   letter-spacing: -0.005em;
-
 
   @media (max-width: $desktop-width) {
     color: $black;
@@ -67,9 +64,6 @@
         background-repeat: no-repeat;
         background-position: center;
       }
-  }
-  
-  @media (max-width: $tablet-width) {
   }
 }
 
