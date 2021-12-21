@@ -4,10 +4,6 @@
   z-index: 2;
   margin-top: 260px;
 
-  @media (max-width: $desktop-width-1300) {
-    margin-top: 106px;
-  }
-
   @media (max-width: $desktop-width) {
     margin-top: 0;
     padding-top: 70px;
@@ -30,7 +26,7 @@
     margin: 0 auto;
   }
 
-  @media (max-width: $tablet-width-900) {
+  @media (max-width: $tablet-width) {
     width: auto;
   }
 }

@@ -33,9 +33,11 @@
   </svg>
   <header class="page-header">
     <div class="page-header__container">
-      <svg class="page-header__logo" width="68" height="21"  fill="#0AD9C6"  opacity="1" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="#main-logo"></use>
-      </svg>
+      <a>
+        <svg class="page-header__logo" width="68" height="21"  fill="#0AD9C6"  opacity="1" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="#main-logo"></use>
+        </svg>
+      </a>  
       <nav class="navigation">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -64,25 +66,16 @@
         <ul class="form__list">
           <li class="form__element">
             <label class="visually-hidden" for="name">Ваше имя</label>
-            <input class="form__input" type="text" name="name" id="name" placeholder="Введите Ваше Имя">
+            <input class="form__input" type="text" name="name" id="name" placeholder="Введите Ваше Имя" required>
           </li>
           <li class="form__element">
             <label class="visually-hidden" for="phone">Ваш телефон</label>
-            <input class="form__input" type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона">
+            <input class="form__input" type="tel" pattern="2-[0-9]{3}-[0-9]{3}" name="phone" id="phone" placeholder="Введите Ваш номер телефона" required>
           </li>
         </ul>
         <button class="form__button" type="submit">Подобрать велосипед мечты</button>
       </form>
     </div>
-    <picture>
-      <source type="image/webp" media="(max-width: 767px)" srcset="img/main-image/main-image-mobile.webp 1x, img/main-image/main-image-mobile-2x.webp 2x">
-      <source type="image/webp" media="(max-width: 1023px)" srcset="img/main-image/main-image-tablet.webp 1x, img/main-image/main-image-tablet-2x.webp 2x">
-      <source type="image/webp" srcset="img/main-image/main-image-desktop.webp 1x, img/main-image/main-image-desktop-2x.webp 2x">
-
-      <source media="(max-width: 767px)" srcset="img/main-image/main-image-mobile.jpg 1x, img/main-image/main-image-mobile-2x.jpg 2x">
-      <source media="(max-width: 1023px)" srcset="img/main-image/main-image-tablet.jpg 1x, img/main-image/main-image-tablet-2x.jpg 2x">
-      <img class="page-header__image" src="img/main-image/main-image-desktop.jpg" srcset="img/main-image/main-image-desktop-2x.jpg 2x" width="1440" height="825" alt="Главное фото маназина велосипеды">
-    </picture>
   </header>
   <main class="page-main">
     <section class="facts">
@@ -179,13 +172,13 @@
       <img class="page-footer__map" src="img/map/map-desktop.jpg" srcset="img/map/map-desktop-2x.jpg 2x" width="857" height="530" alt="Наше местоположение">
     </picture>
     <div class="page-footer__contacts">
-      <a href="#" class="page-footer__contacts-element">
+      <a href="mailto:puteshestviemechta@gmail.ru"> class="page-footer__contacts-element">
         <svg class="page-footer__mail-icon" width="26" height="20"  fill="#0AD9C6"  opacity="1" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="#mail-icon"></use>
         </svg>
         <span  class="page-footer__mail">puteshestviemechta@gmail.ru</span>
       </a>
-      <a href="#" class="page-footer__contacts-element">
+      <a href="tel:+749978468446" class="page-footer__contacts-element">
         <svg class="page-footer__phone-icon" width="22" height="24" fill="transparent" stroke="#0AD9C6" stroke-width="2" stroke-miterlimit="10"  opacity="1" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="#phone-icon"></use>
         </svg>
