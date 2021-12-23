@@ -1,16 +1,23 @@
 .page-footer {
-  padding: 30px 0 98px;
-  
+  padding: 30px 0 78px;
+
   @media (max-width: $desktop-width) {
-    padding-bottom: 58px;
+    padding-bottom: 38px;
   }
 
   @media (max-width: $desktop-width) {
-    padding: 30px 0 30px;
-   }
+    padding: 30px 0 10px;
+  }
 }
 
-.page-footer__adress {
+.page-footer h2 {
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+}
+
+.page-footer p {
   font-weight: normal;
   font-size: 17px;
   line-height: 31px;
@@ -29,22 +36,25 @@
   @media (max-width: $tablet-width) {
     width: auto;
     margin-bottom: 20px;
-    padding: 0 25px;
+    padding: 0 27px;
   }
 }
 
-.page-footer__map {
+.page-footer img {
   display: block;
   width: 957px;
   margin: 0 auto;
   background-color: $gray;
 
   @media (max-width: $desktop-width) {
-   width: 698px;
+    width: 698px;
+    height: 545px;
+    object-fit: cover;
   }
 
   @media (max-width: $tablet-width) {
-    width: auto;
+    width: 320px;
+    height: 250px;
   }
 }
 
@@ -72,6 +82,8 @@
   padding-left: 75px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
+  cursor: pointer;
 
   @media (max-width: $desktop-width) {
     padding-left: 78px;
@@ -83,7 +95,7 @@
   }
 }
 
-.page-footer__mail, .page-footer__phone {
+.page-footer__contacts-element span {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -92,12 +104,13 @@
   margin-left: 15px;
 }
 
-.page-footer__contacts-element:hover .page-footer__mail, .page-footer__contacts-element:hover .page-footer__phone {
- color: turquoise;
- opacity: 1;
+.page-footer__contacts-element:hover span {
+  color: turquoise;
+  opacity: 1;
 }
 
-.page-footer__mail-icon, .page-footer__phone-icon {
+.page-footer__contacts-element svg {
   display: inline-block;
+  text-align: start;
   vertical-align: baseline;
 }

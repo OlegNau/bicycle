@@ -11,6 +11,12 @@
   }
 }
 
+.facts h2{
+  @media (max-width: $desktop-width) {
+    line-height: 41px;
+  }
+}
+
 .facts__list {
   margin: 50px auto 0;
   padding: 0;
@@ -30,7 +36,8 @@
 }
 
 .facts__item {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   margin: 0 18px;
 
   @media (max-width: $desktop-width) {
@@ -38,7 +45,7 @@
   }
 }
 
-.facts__text {
+.facts__item p {
   display: inline-block;
   text-align: center;
   width: 265px;
@@ -59,12 +66,12 @@
 
   @media (max-width: $tablet-width) {
     padding-bottom: 35px;
-    font-size: 18px;  
+    font-size: 18px;
     margin: 9px 0;
   }
 }
 
-.facts__number {
+.facts__item span {
   font-weight: bold;
   font-size: 28px;
   line-height: 38px;

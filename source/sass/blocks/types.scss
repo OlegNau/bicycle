@@ -28,10 +28,11 @@
   width: 342px;
   margin: 0 25px 47px;
   position: relative;
-  
+  cursor: pointer;  
+
   @media (max-width: $desktop-width) {
-  width: 270px;
-  margin-bottom: 30px;
+    width: 270px;
+    margin-bottom: 30px;
   }
 
   @media (max-width: $tablet-width) {
@@ -39,24 +40,35 @@
   }
 }
 
-.types__item:hover .types__image {
+.types__link:active, .types__item:focus {
+  outline: 1px solid $black;
+}
+
+.types__item:hover img {
   outline: 2px solid $turquoise;
 }
 
-.types__item:hover .types__text {
+.types__item:hover p {
   opacity: 0.8;
 }
 
-.types__image {
+.types__link img {
   display: block;
   z-index: 2;
   position: relative;
   width: 342px;
   border-radius: 10px;
   background-color: #ECD4D3;
+
+  @media (max-width: $desktop-width) {
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 100% 60%;
+  }
 }
 
-.types__text {
+.types__link p {
   font-weight: 600;
   font-size: 22px;
   line-height: 34px;
@@ -66,11 +78,11 @@
   margin: 20px 0;
 }
 
-.types__item--road-bicycle-decoration {
+.types__item:nth-child(3n+1) {
   margin-top: 10px;
 
   @media (max-width: $desktop-width) {
-   margin-top: 0;
+    margin-top: 0;
   }
 }
 
@@ -101,11 +113,11 @@
   }
 }
 
-.types__item--offroad-bicycle-decoration {
+.types__item:nth-child(3n+2) {
   margin-top: 39px;
 
   @media (max-width: $desktop-width) {
-   margin-top: 0;
+    margin-top: 0;
   }
 }
 
@@ -119,10 +131,10 @@
   height: 47px;
   border: 8px solid $turquoise;
   background-color: transparent;
-  z-index: 3;    
+  z-index: 3;
 
   @media (max-width: $desktop-width) {
-  display: none;
+    display: none;
   }
 }
 
@@ -136,7 +148,7 @@
   height: 47px;
   border: 8px solid $turquoise;
   background-color: transparent;
-  z-index: 3;    
+  z-index: 3;
 
   @media (max-width: $desktop-width) {
     display: none;
@@ -154,8 +166,8 @@
   border: 17px solid $turquoise;
   background-color: transparent;
   border-radius: 50%;
-  z-index: 3;  
-    
+  z-index: 3;
+
   @media (max-width: $desktop-width) {
     width: 68px;
     height: 68px;

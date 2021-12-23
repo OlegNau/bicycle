@@ -1,16 +1,17 @@
 .navigation {
-  grid-area: nav;
   z-index: 2;
+  order: -1;
 
   @media (max-width: $desktop-width) {
-  z-index: 4;
+    z-index: 4;
   }
 }
 
 .navigation__list {
   width: 874px;
   list-style: none;
-  padding: 20px 20px 0;
+  margin: 0 auto;
+  padding: 20px 0 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -18,7 +19,7 @@
 
   @media (max-width: $desktop-width) {
     background-color: $white;
-    width: 320px;
+    width: 100%;
     border: none;
     flex-direction: column;
     padding: 100px 0;
@@ -32,14 +33,17 @@
 
 .navigation__link {
   display: inline-block;
+  text-align: start;
   color: $light-white;
   padding: 0;
   margin-bottom: 10px;
   letter-spacing: -0.005em;
+  scroll-behavior: smooth;
+  cursor: pointer;
 
   @media (max-width: $desktop-width) {
     color: $black;
-    width: 320px;
+    width: 100%;
     padding: 17px 35px 17px 16px;
     background-color: $gray;
     margin-bottom: 30px;
@@ -72,10 +76,12 @@
 }
 
 .navigation__item{
-  margin-right: 135px;
+  margin-right: 95px;
+  padding: 0 20px;
 
   @media (max-width: $desktop-width) {
-  margin-right: 0;
+    margin-right: 0;
+    padding: 0;
   }
 }
 
@@ -87,18 +93,18 @@
   display: none;
 
   @media (max-width: $desktop-width) {
-  display: block;
-  z-index: 5;
-  background-image: url("../img/svg/open-menu.svg");
-  width: 50px;
-  height: 50px;
-  background-color: $turquoise;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  border: none;
-  background-repeat: no-repeat;
-  background-position: center;
+    display: block;
+    z-index: 5;
+    background-image: url("../img/svg/open-menu.svg");
+    width: 53px;
+    height: 50px;
+    background-color: $turquoise;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -116,6 +122,6 @@
 
 .navigation--hide {
   @media (max-width: $desktop-width) {
-  display: none;
+    display: none;
   }
 }

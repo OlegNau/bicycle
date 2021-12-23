@@ -1,9 +1,21 @@
 .page {
   margin: 0 auto;
   max-width: 1440px;
+  scroll-behavior: smooth;
 }
 
-.page__heading {
+.page__body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.page__body--hidden {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.page h2 {
   display: block;
   padding: 0 100px;
   margin: 0 auto;
@@ -21,21 +33,4 @@
   @media (max-width: $tablet-width) {
     padding: 0;
   }
-}
-
-.page__heading--facts {
-  @media (max-width: $desktop-width) {
-  line-height: 41px;
-  }
-}
-
-.page__heading--footer-mobile {
-  @media (max-width: $tablet-width) {
-  font-size: 18px;
-  padding: 0 15px;
-  }
-}
-
-.page__heading--video {
-    color: $white;
 }
