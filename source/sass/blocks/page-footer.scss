@@ -79,18 +79,17 @@
 }
 
 .page-footer__contacts-element {
-  padding-left: 75px;
+  margin-left: 75px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
   cursor: pointer;
 
   @media (max-width: $desktop-width) {
-    padding-left: 78px;
+    margin-left: 78px;
   }
 
   @media (max-width: $tablet-width) {
-    padding-left: 0;
     margin: 0 auto 25px;
   }
 }
