@@ -122,12 +122,13 @@
 .navigation__toggle--close {
   z-index: 5;
   background-image: url("../img/svg/close-menu.svg");
-  width: 22px;
-  height: 22px;
+  width: 52px;
+  height: 52px;
   position: relative;
   background-color: $white;
-  margin: 15px 15px 15px auto;
+  margin-left: auto;
   border: none;
+  background-position: center;
 }
 
 .navigation__list--hide {
